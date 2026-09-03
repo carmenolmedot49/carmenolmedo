@@ -903,7 +903,6 @@ footer {
     }
 }
 
-
 /* =========================
    SELECTOR DE IDIOMA
 ========================= */
@@ -951,6 +950,29 @@ footer {
 .language-btn.active {
     color: white;
     background-color: var(--pink);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .language-switch {
+        margin-left: auto;
+        margin-right: 12px;
+        padding: 5px 8px;
+    }
+
+    .language-label {
+        display: none;
+    }
+
+    .menu-btn {
+        margin-left: 0;
+    }
+
 }
 
 
