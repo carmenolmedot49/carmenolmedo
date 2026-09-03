@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,7 +24,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 
@@ -39,40 +37,78 @@
             Carmen <span>&lt;/&gt;</span>
         </a>
 
+
         <nav class="nav">
 
-            <a href="#inicio" class="active">
+            <a href="#inicio" class="active" data-es="Inicio" data-en="Home">
                 Inicio
             </a>
 
-            <a href="#sobre-mi">
+            <a href="#sobre-mi" data-es="Sobre mí" data-en="About me">
                 Sobre mí
             </a>
 
-            <a href="#proyectos">
+            <a href="#proyectos" data-es="Proyectos" data-en="Projects">
                 Proyectos
             </a>
 
-            <a href="#tecnologias">
+            <a href="#tecnologias" data-es="Tecnologías" data-en="Technologies">
                 Tecnologías
             </a>
 
-            <a href="#formacion">
+            <a href="#formacion" data-es="Formación" data-en="Education">
                 Formación
             </a>
 
-            <a href="#contacto">
+            <a href="#contacto" data-es="Contacto" data-en="Contact">
                 Contacto
             </a>
 
         </nav>
 
-        <button class="menu-btn">
+
+        <!-- ================= IDIOMA ================= -->
+
+        <div class="language-switch">
+
+            <span
+                class="language-label"
+                data-es="Idioma:"
+                data-en="Language:"
+            >
+                Idioma:
+            </span>
+
+            <button
+                class="language-btn active"
+                data-lang="es"
+                aria-label="Cambiar a español"
+            >
+                ES
+            </button>
+
+            <span class="language-separator">|</span>
+
+            <button
+                class="language-btn"
+                data-lang="en"
+                aria-label="Switch to English"
+            >
+                EN
+            </button>
+
+        </div>
+
+
+        <!-- MENU MOVIL -->
+
+        <button class="menu-btn" aria-label="Abrir menú">
+
             <i class="fa-solid fa-bars"></i>
+
         </button>
 
     </header>
-
 
 
     <!-- ================= HERO ================= -->
@@ -83,33 +119,58 @@
 
             <div class="hero-content">
 
-                <p class="eyebrow">
+                <p
+                    class="eyebrow"
+                    data-es="HOLA, SOY"
+                    data-en="HELLO, I'M"
+                >
                     HOLA, SOY
                 </p>
+
 
                 <h1>
                     Carmen
                     <span>♡</span>
                 </h1>
 
-                <h2>
+
+                <h2
+                    data-es="Desarrolladora web"
+                    data-en="Web Developer"
+                >
                     Desarrolladora web
                 </h2>
 
-                <p class="hero-text">
+
+                <p
+                    class="hero-text"
+                    data-es="Estoy descubriendo el mundo del desarrollo web mientras aprendo, creo mis pequeños proyectos y sigo encontrando mi camino en este sector."
+                    data-en="I am discovering the world of web development while learning, building my own projects and finding my path in the tech industry."
+                >
                     Estoy descubriendo el mundo del desarrollo web mientras
                     aprendo, creo mis pequeños proyectos y sigo encontrando
                     mi camino en este sector.
                 </p>
 
+
                 <a href="#proyectos" class="btn">
-                    Ver mis proyectos
+
+                    <span
+                        data-es="Ver mis proyectos"
+                        data-en="View my projects"
+                    >
+                        Ver mis proyectos
+                    </span>
+
                     <i class="fa-solid fa-arrow-down"></i>
+
                 </a>
+
 
                 <div class="socials">
 
-                    <!-- GitHub - NUEVA PESTAÑA -->
+                    <!-- GitHub -->
+
                     <a
                         href="https://github.com/carmenolmedot49"
                         target="_blank"
@@ -119,7 +180,9 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <!-- LinkedIn - NUEVA PESTAÑA -->
+
+                    <!-- LinkedIn -->
+
                     <a
                         href="https://www.linkedin.com/in/carmen-olmedo-6bbb15219/"
                         target="_blank"
@@ -129,7 +192,9 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
 
+
                     <!-- Email -->
+
                     <a
                         href="mailto:carmenolmedot49@gmail.com"
                         aria-label="Email"
@@ -151,6 +216,8 @@
                     <img
                         src="yo.JPEG"
                         alt="Foto de Carmen"
+                        data-alt-es="Foto de Carmen"
+                        data-alt-en="Photo of Carmen"
                     >
 
                 </div>
@@ -164,7 +231,6 @@
         </section>
 
 
-
         <!-- ================= SOBRE MÍ ================= -->
 
         <section class="about section" id="sobre-mi">
@@ -176,6 +242,8 @@
                     <img
                         src="yo2.JPEG"
                         alt="Foto de Carmen"
+                        data-alt-es="Foto de Carmen"
+                        data-alt-en="Photo of Carmen"
                     >
 
                 </div>
@@ -185,25 +253,52 @@
 
             <div class="about-content">
 
-                <p class="eyebrow">
+                <p
+                    class="eyebrow"
+                    data-es="SOBRE MÍ"
+                    data-en="ABOUT ME"
+                >
                     SOBRE MÍ
                 </p>
 
+
                 <h2>
-                    Un poco
-                    <span>sobre mí</span>
+
+                    <span
+                        data-es="Un poco"
+                        data-en="A little"
+                    >
+                        Un poco
+                    </span>
+
+                    <span
+                        data-es="sobre mí"
+                        data-en="about me"
+                    >
+                        sobre mí
+                    </span>
+
                 </h2>
+
 
                 <div class="pink-line"></div>
 
-                <p>
+
+                <p
+                    data-es="Soy traductora y hace no mucho me gradué en DAW. Mi formación anterior me ha ayudado a desarrollar habilidades comunicativas y manejo de idiomas, así como experiencia en el extranjero."
+                    data-en="I am a translator and I recently graduated in Web Application Development. My previous background has helped me develop strong communication and language skills, as well as gain international experience."
+                >
                     Soy traductora y hace no mucho me gradué en DAW.
                     Mi formación anterior me ha ayudado a desarrollar
-                    habilidades comunicativas y manejo de idiomas.
-                    Así como experiencia en el extranjero.
+                    habilidades comunicativas y manejo de idiomas,
+                    así como experiencia en el extranjero.
                 </p>
 
-                <p>
+
+                <p
+                    data-es="Ahora estoy descubriendo el mundo del desarrollo web, donde puedo combinar mi parte creativa y analítica con mi interés por la tecnología. Lo que más me gusta es el Front-End, pero estoy abierta a conocer otros aspectos de la informática."
+                    data-en="I am now exploring the world of web development, where I can combine my creative and analytical side with my interest in technology. I particularly enjoy Front-End development, but I am also open to exploring other areas of IT."
+                >
                     Ahora estoy descubriendo el mundo del desarrollo
                     web, donde puedo combinar mi parte creativa y
                     analítica con mi interés por la tecnología.
@@ -212,9 +307,15 @@
                     de la informática.
                 </p>
 
+
                 <a href="#contacto" class="outline-btn">
 
-                    Conóceme mejor
+                    <span
+                        data-es="Conóceme mejor"
+                        data-en="Get to know me"
+                    >
+                        Conóceme mejor
+                    </span>
 
                     <i class="fa-regular fa-user"></i>
 
@@ -225,25 +326,47 @@
         </section>
 
 
-
         <!-- ================= PROYECTOS ================= -->
 
         <section class="projects section" id="proyectos">
 
             <div class="section-title">
 
-                <p class="eyebrow">
+                <p
+                    class="eyebrow"
+                    data-es="PROYECTOS"
+                    data-en="PROJECTS"
+                >
                     PROYECTOS
                 </p>
 
+
                 <h2>
-                    Mis
-                    <span>proyectos</span>
+
+                    <span
+                        data-es="Mis"
+                        data-en="My"
+                    >
+                        Mis
+                    </span>
+
+                    <span
+                        data-es="proyectos"
+                        data-en="projects"
+                    >
+                        proyectos
+                    </span>
+
                 </h2>
+
 
                 <div class="pink-line center"></div>
 
-                <p>
+
+                <p
+                    data-es="Una pequeña selección de proyectos que he ido creando durante mi aprendizaje y que continúo mejorando y desarrollando."
+                    data-en="A small selection of projects I have created throughout my learning journey and continue to improve and develop."
+                >
                     Una pequeña selección de proyectos que he ido creando
                     durante mi aprendizaje y que continúo mejorando y desarrollando.
                 </p>
@@ -265,6 +388,8 @@
                             <img
                                 src="webviaje.JPEG"
                                 alt="Proyecto Explora"
+                                data-alt-es="Proyecto Explora"
+                                data-alt-en="Explora project"
                             >
 
                         </div>
@@ -278,7 +403,11 @@
                             Explora
                         </h3>
 
-                        <p>
+
+                        <p
+                            data-es="Web de viajes donde los usuarios pueden descubrir destinos y recomendaciones."
+                            data-en="A travel website where users can discover destinations and recommendations."
+                        >
                             Web de viajes donde los usuarios pueden
                             descubrir destinos y recomendaciones.
                         </p>
@@ -295,27 +424,34 @@
 
                         <div class="project-links">
 
-                            <!-- Ver proyecto - NUEVA PESTAÑA -->
-
                             <a
                                 href="https://v0-404-not-at-home.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+
                                 <i class="fa-regular fa-eye"></i>
-                                Ver proyecto
+
+                                <span
+                                    data-es="Ver proyecto"
+                                    data-en="View project"
+                                >
+                                    Ver proyecto
+                                </span>
+
                             </a>
 
-
-                            <!-- Vercel - NUEVA PESTAÑA -->
 
                             <a
                                 href="https://vercel.com/carmens-projects-5a50ba78/v0-404-not-at-home/Art5W1Q5xR1CJefc6KccYHQa8ukq/source?f=src%2Findex.html"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+
                                 <i class="fa-brands fa-vercel"></i>
+
                                 Vercel
+
                             </a>
 
                         </div>
@@ -323,7 +459,6 @@
                     </div>
 
                 </article>
-
 
 
                 <!-- ================= PROYECTO 2 ================= -->
@@ -337,6 +472,8 @@
                             <img
                                 src="juego.JPG"
                                 alt="Proyecto Ajedrez en solitario"
+                                data-alt-es="Proyecto Ajedrez en solitario"
+                                data-alt-en="Solo Chess project"
                             >
 
                         </div>
@@ -346,11 +483,18 @@
 
                     <div class="project-info">
 
-                        <h3>
+                        <h3
+                            data-es="Ajedrez en solitario"
+                            data-en="Solo Chess"
+                        >
                             Ajedrez en solitario
                         </h3>
 
-                        <p>
+
+                        <p
+                            data-es="Juego del Recorrido del Caballo. Disponible en inglés y español. El usuario puede modificar la paleta de colores del juego."
+                            data-en="A Knight's Tour game. Available in English and Spanish. Users can customise the game's colour palette."
+                        >
                             Juego del Recorrido del Caballo.
                             Disponible en inglés y español.
                             El usuario puede modificar la paleta
@@ -369,27 +513,34 @@
 
                         <div class="project-links">
 
-                            <!-- Ver proyecto - NUEVA PESTAÑA -->
-
                             <a
                                 href="https://knights-tour-game-kappa.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+
                                 <i class="fa-regular fa-eye"></i>
-                                Ver proyecto
+
+                                <span
+                                    data-es="Ver proyecto"
+                                    data-en="View project"
+                                >
+                                    Ver proyecto
+                                </span>
+
                             </a>
 
-
-                            <!-- GitHub - NUEVA PESTAÑA -->
 
                             <a
                                 href="https://github.com/carmenolmedot49/knights-tour-game"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+
                                 <i class="fa-brands fa-github"></i>
+
                                 GitHub
+
                             </a>
 
                         </div>
@@ -402,7 +553,7 @@
             </div>
 
 
-            <!-- VER TODOS LOS PROYECTOS - NUEVA PESTAÑA -->
+            <!-- VER TODOS LOS PROYECTOS -->
 
             <a
                 href="https://github.com/carmenolmedot49?tab=repositories"
@@ -410,190 +561,262 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Ver todos los proyectos
+
+                <span
+                    data-es="Ver todos los proyectos"
+                    data-en="View all projects"
+                >
+                    Ver todos los proyectos
+                </span>
+
                 <i class="fa-solid fa-arrow-right"></i>
+
             </a>
 
         </section>
 
-<!-- ================= TECNOLOGÍAS ================= -->
 
-<section class="technologies section" id="tecnologias">
+        <!-- ================= TECNOLOGÍAS ================= -->
 
-    <div class="section-title">
+        <section class="technologies section" id="tecnologias">
 
-        <p class="eyebrow">
-            TECNOLOGÍAS
-        </p>
+            <div class="section-title">
 
-        <h2>
-            Con lo que
-            <span>trabajo</span>
-        </h2>
-
-        <div class="pink-line center"></div>
-
-        <p>
-            Tecnologías y herramientas que he ido aprendiendo
-            durante mi formación y que sigo desarrollando.
-        </p>
-
-    </div>
+                <p
+                    class="eyebrow"
+                    data-es="TECNOLOGÍAS"
+                    data-en="TECHNOLOGIES"
+                >
+                    TECNOLOGÍAS
+                </p>
 
 
-    <div class="tech-grid">
+                <h2>
+
+                    <span
+                        data-es="Con lo que"
+                        data-en="What I"
+                    >
+                        Con lo que
+                    </span>
+
+                    <span
+                        data-es="trabajo"
+                        data-en="work with"
+                    >
+                        trabajo
+                    </span>
+
+                </h2>
 
 
-        <!-- ================= FRONTEND ================= -->
+                <div class="pink-line center"></div>
 
-        <div class="tech-box">
 
-            <div class="tech-icon">
-                <i class="fa-solid fa-desktop"></i>
-            </div>
-
-            <div>
-
-                <h3>
-                    Frontend
-                </h3>
-
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript</p>
-                <p>React.js · básico</p>
-                <p>AJAX · básico</p>
-                <p>Animaciones web</p>
+                <p
+                    data-es="Tecnologías y herramientas que he ido aprendiendo durante mi formación y que sigo desarrollando."
+                    data-en="Technologies and tools I have learned throughout my training and continue to develop."
+                >
+                    Tecnologías y herramientas que he ido aprendiendo
+                    durante mi formación y que sigo desarrollando.
+                </p>
 
             </div>
 
-        </div>
+
+            <div class="tech-grid">
 
 
+                <!-- FRONTEND -->
 
-        <!-- ================= BACKEND ================= -->
+                <div class="tech-box">
 
-        <div class="tech-box">
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
 
-            <div class="tech-icon">
-                <i class="fa-solid fa-code"></i>
+                    <div>
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>JavaScript</p>
+                        <p data-es="React.js · básico" data-en="React.js · basic">React.js · básico</p>
+                        <p data-es="AJAX · básico" data-en="AJAX · basic">AJAX · básico</p>
+                        <p data-es="Animaciones web" data-en="Web animations">Animaciones web</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BACKEND -->
+
+                <div class="tech-box">
+
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Backend
+                        </h3>
+
+                        <p>Java</p>
+                        <p>PHP</p>
+                        <p data-es="APIs REST · básico" data-en="REST APIs · basic">
+                            APIs REST · básico
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BASES DE DATOS -->
+
+                <div class="tech-box">
+
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <div>
+
+                        <h3
+                            data-es="Bases de datos"
+                            data-en="Databases"
+                        >
+                            Bases de datos
+                        </h3>
+
+                        <p>SQL</p>
+                        <p>MySQL</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DISEÑO WEB -->
+
+                <div class="tech-box">
+
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <div>
+
+                        <h3
+                            data-es="Diseño web"
+                            data-en="Web Design"
+                        >
+                            Diseño web
+                        </h3>
+
+                        <p data-es="Responsive Design" data-en="Responsive Design">
+                            Responsive Design
+                        </p>
+
+                        <p>UX/UI</p>
+
+                        <p data-es="SEO básico" data-en="Basic SEO">
+                            SEO básico
+                        </p>
+
+                        <p data-es="Optimización web" data-en="Web optimisation">
+                            Optimización web
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERRAMIENTAS -->
+
+                <div class="tech-box">
+
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <div>
+
+                        <h3
+                            data-es="Herramientas"
+                            data-en="Tools"
+                        >
+                            Herramientas
+                        </h3>
+
+                        <p>Git</p>
+                        <p>GitHub</p>
+                        <p>VS Code</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PERFIL -->
+
+                <div class="tech-box">
+
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <h3
+                            data-es="Perfil"
+                            data-en="Profile"
+                        >
+                            Perfil
+                        </h3>
+
+                        <p
+                            data-es="Autogestión"
+                            data-en="Self-management"
+                        >
+                            Autogestión
+                        </p>
+
+                        <p
+                            data-es="Aprendizaje autónomo"
+                            data-en="Self-directed learning"
+                        >
+                            Aprendizaje autónomo
+                        </p>
+
+                        <p
+                            data-es="Manejo de idiomas"
+                            data-en="Language skills"
+                        >
+                            Manejo de idiomas
+                        </p>
+
+                        <p
+                            data-es="Experiencia internacional"
+                            data-en="International experience"
+                        >
+                            Experiencia internacional
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div>
-
-                <h3>
-                    Backend
-                </h3>
-
-                <p>Java</p>
-                <p>PHP</p>
-                <p>APIs REST · básico</p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ================= BASES DE DATOS ================= -->
-
-        <div class="tech-box">
-
-            <div class="tech-icon">
-                <i class="fa-solid fa-database"></i>
-            </div>
-
-            <div>
-
-                <h3>
-                    Bases de datos
-                </h3>
-
-                <p>SQL</p>
-                <p>MySQL</p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ================= DISEÑO Y WEB ================= -->
-
-        <div class="tech-box">
-
-            <div class="tech-icon">
-                <i class="fa-solid fa-pen-nib"></i>
-            </div>
-
-            <div>
-
-                <h3>
-                    Diseño web
-                </h3>
-
-                <p>Responsive Design</p>
-                <p>UX/UI</p>
-                <p>SEO básico</p>
-                <p>Optimización web</p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ================= HERRAMIENTAS ================= -->
-
-        <div class="tech-box">
-
-            <div class="tech-icon">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-            </div>
-
-            <div>
-
-                <h3>
-                    Herramientas
-                </h3>
-
-                <p>Git</p>
-                <p>GitHub</p>
-                <p>VS Code</p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ================= PERFIL ================= -->
-
-        <div class="tech-box">
-
-            <div class="tech-icon">
-                <i class="fa-solid fa-user"></i>
-            </div>
-
-            <div>
-
-                <h3>
-                    Perfil
-                </h3>
-
-                <p>Autogestión</p>
-                <p>Aprendizaje autónomo</p>
-                <p>Manejo de idiomas</p>
-                <p>Experiencia internacional</p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
+        </section>
 
 
         <!-- ================= FORMACIÓN ================= -->
@@ -602,14 +825,33 @@
 
             <div class="section-title">
 
-                <p class="eyebrow">
+                <p
+                    class="eyebrow"
+                    data-es="FORMACIÓN"
+                    data-en="EDUCATION"
+                >
                     FORMACIÓN
                 </p>
 
+
                 <h2>
-                    Mi
-                    <span>formación</span>
+
+                    <span
+                        data-es="Mi"
+                        data-en="My"
+                    >
+                        Mi
+                    </span>
+
+                    <span
+                        data-es="formación"
+                        data-en="education"
+                    >
+                        formación
+                    </span>
+
                 </h2>
+
 
                 <div class="pink-line center"></div>
 
@@ -627,17 +869,30 @@
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
 
+
                     <div>
 
-                        <h3>
+                        <h3
+                            data-es="Desarrollo de Aplicaciones Web"
+                            data-en="Web Application Development"
+                        >
                             Desarrollo de Aplicaciones Web
                         </h3>
 
-                        <span class="status">
+
+                        <span
+                            class="status"
+                            data-es="Finalizado"
+                            data-en="Completed"
+                        >
                             Finalizado
                         </span>
 
-                        <p>
+
+                        <p
+                            data-es="Formación Profesional"
+                            data-en="Vocational Training"
+                        >
                             Formación Profesional
                         </p>
 
@@ -657,17 +912,30 @@
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
 
+
                     <div>
 
-                        <h3>
+                        <h3
+                            data-es="Traducción e Interpretación"
+                            data-en="Translation and Interpreting"
+                        >
                             Traducción e Interpretación
                         </h3>
 
-                        <span class="status">
+
+                        <span
+                            class="status"
+                            data-es="Finalizado"
+                            data-en="Completed"
+                        >
                             Finalizado
                         </span>
 
-                        <p>
+
+                        <p
+                            data-es="Universidad"
+                            data-en="University"
+                        >
                             Universidad
                         </p>
 
@@ -680,7 +948,6 @@
         </section>
 
 
-
         <!-- ================= CONTACTO ================= -->
 
         <section class="contact" id="contacto">
@@ -688,35 +955,60 @@
 
             <div class="contact-content">
 
-                <p class="eyebrow">
+                <p
+                    class="eyebrow"
+                    data-es="CONTACTO"
+                    data-en="CONTACT"
+                >
                     CONTACTO
                 </p>
 
+
                 <h2>
-                    ¿Hablamos?
+
+                    <span
+                        data-es="¿Hablamos?"
+                        data-en="Let's talk?"
+                    >
+                        ¿Hablamos?
+                    </span>
+
                     <span>♡</span>
+
                 </h2>
 
-                <p>
+
+                <p
+                    data-es="Si quieres conocer más sobre mis proyectos, colaborar conmigo o simplemente saludar, puedes escribirme."
+                    data-en="If you would like to learn more about my projects, collaborate with me or simply say hello, feel free to get in touch."
+                >
                     Si quieres conocer más sobre mis proyectos,
                     colaborar conmigo o simplemente saludar,
                     puedes escribirme.
                 </p>
 
+
                 <a
                     href="mailto:carmenolmedot49@gmail.com"
                     class="btn"
                 >
-                    Escríbeme
+
+                    <span
+                        data-es="Escríbeme"
+                        data-en="Get in touch"
+                    >
+                        Escríbeme
+                    </span>
+
                     <i class="fa-regular fa-envelope"></i>
+
                 </a>
 
             </div>
 
 
-
-
             <div class="contact-links">
+
 
                 <!-- EMAIL -->
 
@@ -729,7 +1021,7 @@
                 </a>
 
 
-                <!-- GITHUB -  -->
+                <!-- GITHUB -->
 
                 <a
                     href="https://github.com/carmenolmedot49"
@@ -744,7 +1036,7 @@
                 </a>
 
 
-                <!-- LINKEDIN - -->
+                <!-- LINKEDIN -->
 
                 <a
                     href="https://www.linkedin.com/in/carmen-olmedo-6bbb15219/"
@@ -754,7 +1046,7 @@
 
                     <i class="fa-brands fa-linkedin"></i>
 
-                    Linkedin
+                    LinkedIn
 
                 </a>
 
@@ -765,7 +1057,6 @@
     </main>
 
 
-
     <!-- ================= FOOTER ================= -->
 
     <footer>
@@ -774,24 +1065,152 @@
             Carmen <span>&lt;/&gt;</span>
         </div>
 
+
         <p>
             © 2026 Carmen.
         </p>
 
-        <a href="#inicio" class="top">
+
+        <a
+            href="#inicio"
+            class="top"
+            aria-label="Volver arriba"
+        >
             ↑
         </a>
 
     </footer>
 
 
-
     <!-- ================= JAVASCRIPT ================= -->
 
     <script>
 
+        /* =========================
+           CAMBIO DE IDIOMA
+        ========================== */
+
+        const languageButtons = document.querySelectorAll(".language-btn");
+
+        const translatableElements = document.querySelectorAll("[data-es]");
+
+
+        function changeLanguage(language) {
+
+            /* Cambiar textos */
+
+            translatableElements.forEach(element => {
+
+                element.textContent = element.dataset[language];
+
+            });
+
+
+            /* Cambiar textos alternativos de imágenes */
+
+            document.querySelectorAll("[data-alt-es]").forEach(image => {
+
+                image.alt = image.dataset[`alt-${language}`];
+
+            });
+
+
+            /* Cambiar atributo lang */
+
+            document.documentElement.lang = language;
+
+
+            /* Cambiar título de la página */
+
+            if (language === "en") {
+
+                document.title = "Carmen | Web Development";
+
+            } else {
+
+                document.title = "Carmen | Desarrollo Web";
+
+            }
+
+
+            /* Actualizar botones */
+
+            languageButtons.forEach(button => {
+
+                button.classList.toggle(
+                    "active",
+                    button.dataset.lang === language
+                );
+
+            });
+
+
+            /* Guardar idioma */
+
+            localStorage.setItem("portfolioLanguage", language);
+
+
+            /* Actualizar URL */
+
+            const url = new URL(window.location);
+
+            url.searchParams.set("lang", language);
+
+            window.history.replaceState({}, "", url);
+
+        }
+
+
+        /* =========================
+           BOTONES DE IDIOMA
+        ========================== */
+
+        languageButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                changeLanguage(button.dataset.lang);
+
+            });
+
+        });
+
+
+        /* =========================
+           DETECTAR IDIOMA INICIAL
+        ========================== */
+
+        const urlLanguage =
+            new URLSearchParams(window.location.search).get("lang");
+
+        const savedLanguage =
+            localStorage.getItem("portfolioLanguage");
+
+        const browserLanguage =
+            navigator.language.toLowerCase().startsWith("en")
+                ? "en"
+                : "es";
+
+
+        const initialLanguage =
+            urlLanguage === "en" || urlLanguage === "es"
+                ? urlLanguage
+                : savedLanguage === "en" || savedLanguage === "es"
+                    ? savedLanguage
+                    : browserLanguage;
+
+
+        changeLanguage(initialLanguage);
+
+
+        /* =========================
+           MENÚ MÓVIL
+        ========================== */
+
         const menuBtn = document.querySelector(".menu-btn");
+
         const nav = document.querySelector(".nav");
+
 
         menuBtn.addEventListener("click", () => {
 
@@ -814,5 +1233,4 @@
 
 
 </body>
-
 </html>
