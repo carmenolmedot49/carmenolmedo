@@ -364,11 +364,23 @@ button {
     text-align: center;
 }
 
+/*
+Cuando tenga 4 proyectos poner para que salgan de dos en dos...
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
     max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+*/
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: left;
 }
